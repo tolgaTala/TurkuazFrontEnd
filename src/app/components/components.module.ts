@@ -15,6 +15,9 @@ import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { LandingComponent } from './landing/landing.component';
+import { PlayerComponent } from './player/player.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { YonetimComponent } from './yonetim/yonetim.component';
 
 @NgModule({
     imports: [
@@ -34,7 +37,10 @@ import { LandingComponent } from './landing/landing.component';
         NotificationComponent,
         NgbdModalComponent,
         NgbdModalContent,
-        LandingComponent
+        LandingComponent,
+        PlayerComponent,
+        AboutUsComponent,
+        YonetimComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

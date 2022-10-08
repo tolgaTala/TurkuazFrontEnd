@@ -8,6 +8,9 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { PlayerComponent } from './components/player/player.component';
+import { YonetimComponent } from './components/yonetim/yonetim.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,7 +18,10 @@ const routes: Routes =[
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'nucleoicons',      component: NucleoiconsComponent },
+    { path: 'about-us',         component: AboutUsComponent },
+    { path: 'players',         component: PlayerComponent },
+    { path: 'yonetim',         component: YonetimComponent },
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 {
-  "name": "paper-kit-2-angular",
+  "name": "FrontEnd-TurkuazSporKulubü",
   "version": "1.4.0",
   "license": "MIT",
   "repository": {
@@ -17,12 +17,14 @@
   },
   "dependencies": {
     "@angular/animations": "11.0.4",
+    "@angular/cdk": "^11.2.13",
     "@angular/common": "11.0.4",
     "@angular/compiler": "11.0.4",
     "@angular/core": "11.0.4",
     "@angular/forms": "11.0.4",
     "@angular/http": "7.2.16",
     "@angular/localize": "^11.0.4",
+    "@angular/material": "^11.2.13",
     "@angular/platform-browser": "11.0.4",
     "@angular/platform-browser-dynamic": "11.0.4",
     "@angular/router": "11.0.4",
