@@ -11,6 +11,9 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { PlayerComponent } from './components/player/player.component';
 import { YonetimComponent } from './components/yonetim/yonetim.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { EtkinliklerComponent } from './components/etkinlikler/etkinlikler.component';
+import { PlayersForYearComponent } from './components/player/players-for-year/players-for-year.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,7 +24,10 @@ const routes: Routes =[
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'about-us',         component: AboutUsComponent },
     { path: 'players',         component: PlayerComponent },
+    { path: 'playersforyear',         component: PlayersForYearComponent },
     { path: 'yonetim',         component: YonetimComponent },
+    { path: 'gallery',         component: GalleryComponent },
+    { path: 'etkinlikler',         component: EtkinliklerComponent },
 ];
 
 @NgModule({

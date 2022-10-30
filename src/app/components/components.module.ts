@@ -18,6 +18,9 @@ import { LandingComponent } from './landing/landing.component';
 import { PlayerComponent } from './player/player.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { YonetimComponent } from './yonetim/yonetim.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { EtkinliklerComponent } from './etkinlikler/etkinlikler.component';
+import { PlayersForYearComponent } from './player/players-for-year/players-for-year.component';
 
 @NgModule({
     imports: [
@@ -40,7 +43,10 @@ import { YonetimComponent } from './yonetim/yonetim.component';
         LandingComponent,
         PlayerComponent,
         AboutUsComponent,
-        YonetimComponent
+        YonetimComponent,
+        GalleryComponent,
+        EtkinliklerComponent,
+        PlayersForYearComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

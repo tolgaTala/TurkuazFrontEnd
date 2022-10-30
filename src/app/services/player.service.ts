@@ -11,7 +11,7 @@ import { ResponseModel } from 'app/models/responseModel';
 })
 export class PlayerService {
 
-  apiUrl = "https://localhost:44312/api/users/"
+  apiUrl = "https://localhost:44312/api/"
   constructor(private httpClient:HttpClient) { }
 
   getPlayers():Observable<ListResponseModel<Player>> {

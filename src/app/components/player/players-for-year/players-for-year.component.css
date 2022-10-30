@@ -26,8 +26,8 @@ body {
 
 .fut-player-card {
 	position: relative;
-	width: 200px;
-	height: 305px;
+	width: 250px;
+	height: 385px;
 	background-image: url(assets/img/card_bg1.png);
 	background-position: center center;
 	background-size: 100% 100%;
@@ -41,28 +41,33 @@ body {
 
 @media screen and (max-width: 769px) {
 	.fut-player-card {
-		width: 156px;
-		height: 250px;
+		width: 306px;
+		height:420px;
+		margin: auto;
+		
 	}
 	.player-name{
 		
+		font-size: 1.2rem;
 	}
 	.col-md-3{
-		width: 50%;
+		
 	}
-	.player-card-top {
-		margin-top: -30px;
+	.player.player-picture{
+		margin-top: 20px;
 	}
-	.player-card-bottom{
-		margin-top: -10px;
-		font-size: 0.5em;
+	.player-info{
+		font-size: 0.6rem;
+		margin-top: -175px;
 	}
+	
+    
 }
-.fut-player-card:hover{
+/* .fut-player-card:hover{
     cursor: pointer;
     
     transition: 150ms ease-in;
-}
+} */
 
 .fut-player-card .player-card-top {
 	position: relative;
@@ -171,12 +176,11 @@ body {
 	width: 100%;
 	display: block;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	border-bottom: 2px solid rgba(233, 204, 116, 0.1);
 	padding-bottom: 0.3rem;
 	overflow: hidden;
-	margin-top: -25px;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-name span {
@@ -209,11 +213,13 @@ body {
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col span .player-feature-value {
 	margin-right: 0.3rem;
+    font-size: 0.6rem;
 	font-weight: 700;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col span .player-feature-title {
-	font-weight: 300;
+    font-size: 0.8rem;
+	font-weight: 500;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col:last-child {
