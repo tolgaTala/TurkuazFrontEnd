@@ -21,6 +21,19 @@ import { YonetimComponent } from './yonetim/yonetim.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EtkinliklerComponent } from './etkinlikler/etkinlikler.component';
 import { PlayersForYearComponent } from './player/players-for-year/players-for-year.component';
+import { SingleEtkinlikPageComponent } from './etkinlikler/single-etkinlik-page/single-etkinlik-page.component';
+import { BeslenmeComponent } from './beslenme/beslenme.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { ActivitiesComponent } from './admin-panel/activities/activities.component';
+
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatRippleModule} from '@angular/material/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSelectModule} from '@angular/material/select';
+
+
 
 @NgModule({
     imports: [
@@ -29,7 +42,13 @@ import { PlayersForYearComponent } from './player/players-for-year/players-for-y
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
+        MatButtonModule,
+        MatRippleModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+        MatTooltipModule,
     ],
     declarations: [
         ComponentsComponent,
@@ -46,7 +65,11 @@ import { PlayersForYearComponent } from './player/players-for-year/players-for-y
         YonetimComponent,
         GalleryComponent,
         EtkinliklerComponent,
-        PlayersForYearComponent
+        PlayersForYearComponent,
+        SingleEtkinlikPageComponent,
+        BeslenmeComponent,
+        AdminPanelComponent,
+        ActivitiesComponent,
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

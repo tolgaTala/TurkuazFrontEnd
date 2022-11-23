@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +14,10 @@ import { YonetimComponent } from './components/yonetim/yonetim.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { EtkinliklerComponent } from './components/etkinlikler/etkinlikler.component';
 import { PlayersForYearComponent } from './components/player/players-for-year/players-for-year.component';
+import { SingleEtkinlikPageComponent } from './components/etkinlikler/single-etkinlik-page/single-etkinlik-page.component';
+import { BeslenmeComponent } from './components/beslenme/beslenme.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { ActivitiesComponent } from './components/admin-panel/activities/activities.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,6 +32,12 @@ const routes: Routes =[
     { path: 'yonetim',         component: YonetimComponent },
     { path: 'gallery',         component: GalleryComponent },
     { path: 'etkinlikler',         component: EtkinliklerComponent },
+    { path: 'etkinlik',         component: SingleEtkinlikPageComponent },
+    { path: 'beslenme',         component: BeslenmeComponent },
+    { path: 'admin',         component: AdminPanelComponent , children:[
+        {path:'admietkinlikler',   component: ActivitiesComponent},
+    ] },
+
 ];
 
 @NgModule({
@@ -35,6 +45,7 @@ const routes: Routes =[
     CommonModule,
     BrowserModule,
     RouterModule.forRoot(routes,{
+      scrollPositionRestoration:'enabled',
       useHash: true
     })
   ],

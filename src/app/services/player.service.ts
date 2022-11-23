@@ -15,7 +15,7 @@ export class PlayerService {
   constructor(private httpClient:HttpClient) { }
 
   getPlayers():Observable<ListResponseModel<Player>> {
-    let newPath = this.apiUrl+"products/getall";
+    let newPath = this.apiUrl+"players/getall";
     return this.httpClient.get<ListResponseModel<Player>>(newPath);
   }
   getPlayersDto():Observable<ListResponseModel<PlayerDto>> {

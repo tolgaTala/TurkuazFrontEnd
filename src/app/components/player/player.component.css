@@ -20,6 +20,9 @@ body {
 .baslik{
 	text-align: center;
 }
+.text-white{
+	margin-top: -30px;
+}
 /*
   *** fut-player-card styles ***
 */
@@ -56,6 +59,9 @@ body {
 	.player-card-bottom{
 		margin-top: -10px;
 		font-size: 0.5em;
+	}
+	.text-white{
+		margin-top: 50px;
 	}
 }
 .fut-player-card:hover{
